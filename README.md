@@ -1,6 +1,17 @@
 This is my solution to [this](https://github.com/makersacademy/course/tree/master/bookmark_manager) challenge;
 
-User stories;
+Setting up the database
+
+Connect to `psql` and create the `bookmark_manager` database:
+```
+CREATE DATABASE bookmark_manager;
+```
+To set up the appropriate tables, connect to the database in `psql` and run the SQL scripts in the `db/migrations` folder in the CORRECT order.
+
+To view bookmarks, navigate to `localhost:9292/bookmarks`.
+
+User stories given;
+
 As a user
 So I can easily find my favourite pages
 I want to be able to see my bookmarked pages
