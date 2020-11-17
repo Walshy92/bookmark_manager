@@ -1,6 +1,6 @@
-This is my solution to [this](https://github.com/makersacademy/course/tree/master/bookmark_manager) challenge;
+This is my solution to [the bookmark_manager challenge](https://github.com/makersacademy/course/tree/master/bookmark_manager) challenge;
 
-Setting up the database
+## Setting up the database
 
 Connect to `psql` and create the `bookmark_manager` database:
 ```
@@ -10,11 +10,18 @@ To set up the appropriate tables, connect to the database in `psql` and run the 
 
 To view bookmarks, navigate to `localhost:9292/bookmarks`.
 
-User stories given;
+## Setting up the test database
+```
+CREATE DATABASE bookmark_manager_test;
+```
+We have created a bookmark_manager_test database to simulate the tests of our ever changing list of bookmarks to ensure it accurately tests the code, we followed the same steps as with creating the actual database so the migrations path should work the same when setting up the test environment.
+
+User stories given:
 
 As a user
 So I can easily find my favourite pages
 I want to be able to see my bookmarked pages
+
 [Diagram model](https://imgur.com/a/2BHSQiC)
 
 As a user
